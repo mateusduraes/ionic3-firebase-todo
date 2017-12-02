@@ -11,7 +11,7 @@
     <ion-list-header color="light">Tasks</ion-list-header>
     <ion-item *ngFor="let task of tasks$ | async">
       {{ task.name }}
-      <span item-right>{{ task.value }}</span>
+      <p item-right>Value: {{ task.value }}</p>
     </ion-item>
   </ion-list>
 
