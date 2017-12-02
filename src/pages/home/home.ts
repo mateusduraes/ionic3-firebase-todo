@@ -17,4 +17,9 @@ export class HomePage {
       this.tasks$ = this.afDB.list<Task>('tasks').valueChanges();
   }
 
+
+  public goEdit(task: Task): void {
+    this.navCtrl.push('TaskFormPage', {task});
+  }
+
 }

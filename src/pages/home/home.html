@@ -9,7 +9,7 @@
 <ion-content class="outer-content">
   <ion-list>
     <ion-list-header color="light">Tasks</ion-list-header>
-    <ion-item *ngFor="let task of tasks$ | async">
+    <ion-item *ngFor="let task of tasks$ | async" (click)="goEdit(task)">
       {{ task.name }}
       <p item-right>Value: {{ task.value }}</p>
     </ion-item>

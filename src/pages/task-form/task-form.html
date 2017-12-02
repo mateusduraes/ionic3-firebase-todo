@@ -25,7 +25,7 @@
       <ion-label floating>Task value</ion-label>
       <ion-input type="number" formControlName="value"></ion-input>
     </ion-item>
-    <button ion-button block color="primary">Add task</button>
+    <button ion-button block color="primary">{{isEditting ? 'Update' : 'Add'}} task</button>
   </form>
 
 </ion-content>
